@@ -1,0 +1,11 @@
+<h1>This is word-counter: </h1><br>
+
+<form action="counter" method="POST">
+    {% csrf_token %}
+    <label">Please! type/paste your article:</label><br>
+    <textarea type="text" name="text" rows="25" cols="100"></textarea>
+    <br><br>
+    <input type="submit">
+</form>
+
+<h1>{{text}}</h1>
